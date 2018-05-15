@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style/style.css">
+    <meta charset="UTF-8">
+    <title>Owen Sanders</title>
+</head>
+<body>
+    <h1>
+        Owen Sanders
+    </h1>
+    <h2>
+        Software Engineer. 
+    </h2>
+
+    <div id="projects"> <!-- two column using flexbox. One column on mobile.-->
+
+        <div id = "project">
+            <h2 id="projectTitle">
+                FoodFriend.
+            </h2>
+            <img id = "projectImage" src="/static/images/jazz.jpg">
+            <p id="projectDescription">
+                A Slack bot for restaurant inquires. Uses natural language processing to help teams decided where their next meal should be. Written in Python and hosted using AWS Lambda. Scrapes Yelp and TripAdvisor for reviews using beautifulsoup. Uses POS tagging to decode messages and find relevant reviews and create subscores. Session data and restaurant reviews are cached in Redis. 
+            </p>
+        </div>
+        <div id = "project">
+            <h2 id="projectTitle">
+                Poncho's Data Dashboard.
+            </h2>
+            <img id = "projectImage" src="/static/images/jazz.jpg">
+            <p id="projectDescription">
+                An internal data dashboard created for the fine folks at Poncho Inc. Data is pulled daily and stored in Postgres. The dashboard that retrieves the data is written in React using D3. I wrote all of the back-end code that interfaces with the database, all of the networking code for the dashboard and some of the graphs. Has an accompanying slack bot. 
+            </p>
+
+        </div>
+        <div id = "project">
+            <h2 id="projectTitle">
+                Fat12 Filesystem.
+            </h2>
+
+            <img id = "projectImage" src="/static/images/jazz.jpg">
+
+            <p id="projectDescription">
+                A full FAT12 filesystem for my OS Architecture class. Made in C. Implemented necessary Bourne Shell functions: cd, pwd, cat, mkdir, ls and, most importantly, sl.
+            </p>
+        </div>
+
+
+        <div id = "project">
+            <h2 id="projectTitle">
+                NHTSA complaints text mining.
+            </h2>
+
+            <img id = "projectImage" src="/static/images/jazz.jpg">
+
+            <p id="projectDescription">
+                Made in Python using ipynb. Used sentiment analysis (VADER) on millions of consumer complaints to grade accident severity. Foretold recalls.
+            </p>
+        </div>
+
+
+    </div>
+
+    <div id="resume">
+        <a href="/static/pdfs/OwenSandersResume.pdf" target="_blank">My Resume</a>
+    </div>
+
+    <div id="links">
+
+    </div>
+
+    <form action = "/fun" method = "POST">
+        <p><input type = 'submit' value = 'Give me the fun version.'/></p>
+    </form>
+
+
+
+
+
+</body>
+</html>

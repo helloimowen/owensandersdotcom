@@ -1,0 +1,18 @@
+#projectImage{
+    width: 400px; 
+    height: 400px;
+}
+
+#projects{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    align-content: flex-start; 
+
+}
+#project{
+    float: left;
+    margin:auto; 
+    width: 400px;
+    max-width: 50%;
+}
