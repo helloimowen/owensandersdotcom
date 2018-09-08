@@ -5,11 +5,8 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
 
-    if request.cookies.get('fun') is '1':
-        return render_template("fun.html")
 
-    else:
-        return render_template("index.html")
+    return render_template("index.html")
 
 
 @app.route("/fun", methods=['POST', 'GET'])
